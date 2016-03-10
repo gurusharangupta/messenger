@@ -11,9 +11,22 @@ import org.acc.messenger.model.Profile;
 public class MessageService {
 
 	private Map<Long, Message> messages = DatabaseClass.getMessages();
+
 	private Map<Long, Profile> profiles = DatabaseClass.getProfiles();
 
-	// Gets all the messages
+	public MessageService(){
+		
+		messages.put(1L, new Message(1L, "Hello World", "Gurusharan"));
+		messages.put(2L, new Message(2L, "Pursuit of Happyness", "Rajat"));
+		
+		
+		
+	}
+
+
+
+
+
 	public List<Message> getAllMessages() {
 
 		return new ArrayList<Message>(messages.values());
@@ -50,6 +63,7 @@ public class MessageService {
 	public Message removeMessage(long id) {
 
 		return messages.remove(id);
+
 
 	}
 }
