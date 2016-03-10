@@ -19,5 +19,15 @@ public class MessageService {
 		return new ArrayList<Message>(messages.values());
 		
 		
+		
+	}
+	
+	
+	public Message getMessageById(long id){
+		
+		
+		
+		return null;
+			
 	}
 }
