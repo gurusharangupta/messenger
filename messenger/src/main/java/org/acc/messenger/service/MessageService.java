@@ -21,4 +21,13 @@ public class MessageService {
 		
 		
 	}
+	
+	
+	public Message getMessageById(long id){
+		
+		
+		
+		return null;
+			
+	}
 }
