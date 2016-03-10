@@ -30,7 +30,7 @@ public class MessageResource {
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/{messageId}")
 	public Message getMessageById(@PathParam("messageId") long messageId){
-		return messageService.getMessageById(messageId);
+		return messageService.getMessage(messageId);
 		
 	
 	
