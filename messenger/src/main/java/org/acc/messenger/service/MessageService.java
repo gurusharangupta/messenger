@@ -9,25 +9,27 @@ import org.acc.messenger.model.Message;
 
 public class MessageService {
 
-	private Map<Long,Message> messages = DatabaseClass.getMessages();
+	private Map<Long, Message> messages = DatabaseClass.getMessages();
 	
-	
-	//Gets all the messages
-	public List<Message> getAllMessages(){
+	public MessageService(){
 		
-		
-		return new ArrayList<Message>(messages.values());
+		messages.put(1L, new Message(1L, "Hello World", "Gurusharan"));
+		messages.put(2L, new Message(2L, "Pursuit of Happyness", "Rajat"));
 		
 		
 		
 	}
-	
-	
-	public Message getMessageById(long id){
-		
-		
-		
+
+	// Gets all the messages
+	public List<Message> getAllMessages() {
+
+		return new ArrayList<Message>(messages.values());
+
+	}
+
+	public Message getMessageById(long id) {
+
 		return null;
-			
+
 	}
 }
