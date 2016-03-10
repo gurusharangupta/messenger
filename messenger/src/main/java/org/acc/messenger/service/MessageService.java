@@ -11,6 +11,8 @@ public class MessageService {
 
 	private Map<Long,Message> messages = DatabaseClass.getMessages();
 	
+	
+	//Gets all the messages
 	public List<Message> getAllMessages(){
 		
 		
